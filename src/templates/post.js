@@ -2,7 +2,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import "../styles/post.css";
+import "../styles/post.scss";
 
 export default function Post({ pageContext }) {
     const { title, updatedAt, image } = pageContext.post;

@@ -4,7 +4,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import NOT_FOUND_IMG from "../images/pic1.jpg"
-import "../styles/404.css"
+import "../styles/404.scss"
 
 export default function NotFound() {
     return (

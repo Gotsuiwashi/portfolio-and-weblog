@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import React from "react"
 import Nav from "../components/navigation"
 import LOGO_IMG from "../images/gatsby-icon.png"
-import "../styles/header.css"
+import "../styles/header.scss"
 import Social from "./social"
 
 export default function Header() {
