@@ -1,7 +1,7 @@
 // src/components/post-link.js
 import { Link } from "gatsby";
 import React from "react";
-import "../styles/post-link.scss";
+import "../styles/components/post-link.scss";
 
 export default function PostLink({ post }) {
     const { title, updatedAt, image } = post;

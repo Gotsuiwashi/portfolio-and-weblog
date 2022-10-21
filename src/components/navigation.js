@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import "../styles/header.scss"
+import "../styles/components/header.scss"
 
 export default function Nav() {
     return (

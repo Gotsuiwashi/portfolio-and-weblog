@@ -1,7 +1,7 @@
 // src/components/header.js
 import React from "react"
 import Nav from "../components/navigation"
-import "../styles/footer.scss"
+import "../styles/components/footer.scss"
 import Social from "./social"
 
 export default function Footer() {

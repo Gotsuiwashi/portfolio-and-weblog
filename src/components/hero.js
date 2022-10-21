@@ -1,6 +1,6 @@
 // src/components/hero.js
 import React from "react"
-import "../styles/hero.scss"
+import "../styles/components/hero.scss"
 
 export default function Hero() {
     return (
