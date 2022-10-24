@@ -1,9 +1,10 @@
 import React from "react";
+import "../styles/components/contact-form.scss";
 
 export default function ContactForm({ children }) {
     return (
-        <div>
-            <div>
+        <div className="wrapper">
+            <div className="container">
                 <h1>Contact</h1>
                 <p>お気軽にご連絡ください</p>
                 <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/success">

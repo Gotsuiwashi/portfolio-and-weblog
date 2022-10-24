@@ -9,13 +9,23 @@ import Seo from "../components/seo"
 export default function Home({ data }) {
   return (
     <Layout>
-      <Seo title="Dev Blog" description="Gatsbyを使って作ったブログです" />
+      <Seo title="Dev Blog" description="Gatsbyブログ" />
       <Hero></Hero>
+      <div className="wrapper-about"></div>
+      <div className="wrapper-works">{/*
+        {data.allContentfulDeliverable.edges.map(edge =>
+          <DeriverableLink key={edge.node.slug} work={edge.node} />
+        )}*/}
+      </div>
       <div>Hello blogs</div>
-      {data.allContentfulPost.edges.map(edge =>
-        <Postlink key={edge.node.slug} post={edge.node} />
-      )}
-      <ContactForm></ContactForm>
+      <div className="wrapper-post">
+        {data.allContentfulPost.edges.map(edge =>
+          <Postlink key={edge.node.slug} post={edge.node} />
+        )}
+      </div>
+      <div className="wrapper-contact">
+        <ContactForm></ContactForm>
+      </div>
     </Layout>
   )
 }
@@ -37,6 +47,22 @@ export const query = graphql`
             }
             slug
             updatedAt(locale: "ja-JP", formatString: "YYYY年MM月DD日")
+          }
+        }
+      }
+      
+      allContentfulDeliverable {
+        edges {
+          node {
+            title
+            image {
+              file {
+                url
+              }
+            }
+            technique
+            updatedAt(locale: "ja-JP", formatString: "YYYY年MM月DD日")
+            slug
           }
         }
       }

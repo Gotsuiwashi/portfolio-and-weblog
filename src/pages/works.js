@@ -1,8 +1,8 @@
 import { graphql } from "gatsby"
 import React from "react"
+import DeriverableLink from "../components/deriverable"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Worklink from "../components/work-link"
 
 export default function Works({ data }) {
   return (
@@ -10,7 +10,7 @@ export default function Works({ data }) {
       <Seo title="works" description="Gatsbyを使って作ったworks" />
       <div>Hello blogs</div>
       {data.allContentfulDeliverable.edges.map(edge =>
-        <Worklink key={edge.node.slug} work={edge.node} />
+        <DeriverableLink key={edge.node.slug} work={edge.node} />
       )}
     </Layout>
   )

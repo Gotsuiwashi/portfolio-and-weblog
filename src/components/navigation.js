@@ -1,15 +1,15 @@
 import { Link } from "gatsby"
 import React from "react"
-import "../styles/components/header.scss"
+import "../styles/components/nav.scss"
 
 export default function Nav() {
     return (
-        <nav>
-            <ul className="cf">
-                <li className="about"><Link to="/">About</Link></li>
-                <li className="works"><Link to="/">Works</Link></li>
-                <li className="blog"><Link to="/">Blog</Link></li>
-                <li className="contact"><Link to="/">Contact</Link></li>
+        <nav className="nav">
+            <ul className="links">
+                <li className="about"><Link to="/about">About</Link></li>
+                <li className="works"><Link to="/works">Works</Link></li>
+                <li className="blog"><Link to="/blog">Blog</Link></li>
+                <li className="contact"><Link to="/contact">Contact</Link></li>
             </ul>
         </nav>
     )

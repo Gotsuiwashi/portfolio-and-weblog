@@ -8,7 +8,7 @@ export default function About() {
         <Layout>
             <Seo title="Career Detail" description="経歴紹介ページ" />
             <div className="not-found-message">
-                <h1>404 Not Found</h1>
+                <h1>What about this website</h1>
                 <Link to="/">トップページへ</Link>
             </div>
         </Layout>

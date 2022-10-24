@@ -2,7 +2,7 @@
 import { Link } from "gatsby";
 import React from "react";
 
-export default function WorkLink({ work }) {
+export default function DeriverableLink({ work }) {
     const { title, updatedAt, image, technique } = work;
     const pageLink = `/works/${work.slug}/`
 
