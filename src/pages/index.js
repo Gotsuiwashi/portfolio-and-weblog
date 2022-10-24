@@ -5,25 +5,26 @@ import Hero from "../components/hero"
 import Layout from "../components/layout"
 import Postlink from "../components/post-link"
 import Seo from "../components/seo"
+import "../styles/pages/index.scss"
 
 export default function Home({ data }) {
   return (
     <Layout>
       <Seo title="Dev Blog" description="Gatsbyブログ" />
       <Hero></Hero>
-      <div className="wrapper-about"></div>
-      <div className="wrapper-works">{/*
+      <div className="contents-wrapper"></div>
+      <div className="contents-wrapper">{/*
         {data.allContentfulDeliverable.edges.map(edge =>
           <DeriverableLink key={edge.node.slug} work={edge.node} />
         )}*/}
       </div>
       <div>Hello blogs</div>
-      <div className="wrapper-post">
+      <div className="contents-wrapper">
         {data.allContentfulPost.edges.map(edge =>
           <Postlink key={edge.node.slug} post={edge.node} />
         )}
       </div>
-      <div className="wrapper-contact">
+      <div className="contents-wrapper">
         <ContactForm></ContactForm>
       </div>
     </Layout>
