@@ -5,8 +5,6 @@ export default function ContactForm({ children }) {
     return (
         <div className="wrapper">
             <div className="container">
-                <h1>Contact</h1>
-                <p>お気軽にご連絡ください</p>
                 <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/success">
                     <input type="hidden" name="form-name" value="contact" />
                     <label htmlFor="name">お名前</label>

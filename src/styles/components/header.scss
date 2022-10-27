@@ -1,38 +1,37 @@
 .logo-image {
-    width: 120px;
+  width: 120px;
 }
 
 header {
-    display: grid;
-    grid-template-areas:
-        "logo social"
-        "nav nav"
-    ;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-areas:
+    'logo social'
+    'nav nav';
+  grid-template-columns: 1fr 1fr;
 
-    .main-logo {
-        grid-area: logo;
-        text-align: left;
+  .main-logo {
+    grid-area: logo;
+    text-align: left;
+  }
+
+  .social {
+    grid-area: social;
+    padding-left: 16vw;
+    display: flex;
+    justify-content: end;
+
+    li {
+      margin: 6px;
     }
+  }
 
-    .social {
-        grid-area: social;
-        padding-left: 16vw;
-        display: flex;
-        justify-content: end;
+  .nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: end;
 
-        li {
-            margin: 6px;
-        }
+    li {
+      margin: 5px;
     }
-
-    .nav {
-        grid-area: nav;
-        display: flex;
-        justify-content: end;
-
-        li {
-            margin: 5px;
-        }
-    }
+  }
 }

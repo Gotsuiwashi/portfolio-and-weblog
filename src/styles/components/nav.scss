@@ -1,3 +1,30 @@
-li {
+.nav {
+  li {
     display: inline-block;
+    position: relative;
+    text-shadow: 3px 3px 1px #d0d0d0;
+  }
+
+  li::after {
+    content: "";
+    display: block;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    margin-top: 6px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    transition-duration: 0.5s;
+  }
+
+  li:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  a {
+    text-decoration: none;
+    transition-duration: 3s;
+  }
 }

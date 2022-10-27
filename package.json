@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
+    "format:css": "prettier --write ./src/styles/**/*.{css,scss,sass}",
+    "lint:css": "stylelint ./src/styles/**/*.{css,scss,sass}",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
@@ -16,7 +18,9 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "gatsby": "^4.24.4",
+    "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-react-helmet": "^5.24.0",
+    "gatsby-plugin-sass": "^5.24.0",
     "gatsby-plugin-sharp": "^4.24.0",
     "gatsby-source-contentful": "^7.22.0",
     "gatsby-transformer-remark": "^5.24.0",
@@ -24,11 +28,19 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
-    "gatsby-plugin-sass": "^5.24.0",
     "sass": "^1.55.0"
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "eslint": "^8.26.0",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.14.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
   },
   "repository": {
     "type": "git",

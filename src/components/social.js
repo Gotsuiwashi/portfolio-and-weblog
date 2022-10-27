@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
-import GITHUB_IMG from "../images/github.svg"
-import TWITTER_IMG from "../images/twitter.svg"
+import GITHUB_IMG from "../images/github-brown.svg"
+import TWITTER_IMG from "../images/twitter-white-svg.svg"
 import "../styles/components/social.scss"
 
 export default function Social() {

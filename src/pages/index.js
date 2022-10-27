@@ -12,19 +12,33 @@ export default function Home({ data }) {
     <Layout>
       <Seo title="Dev Blog" description="Gatsbyブログ" />
       <Hero></Hero>
-      <div className="contents-wrapper"></div>
-      <div className="contents-wrapper">{/*
+      <div className="contents-wrapper">
+        <h2>ドンナサイト？</h2>
+        <hr />
+        <p>エンジニア(?)兼デザイナー(?)の<br></br>Gotsuiwashi(屋号)が制作した<br />ポートフォリオサイト。ブログ等のコンテンツも製作中。
+        </p>
+      </div>
+      <div className="contents-wrapper">
+        <h2>ツクッタモノ</h2>
+        <hr />
+        <p>制作に携わったウェブサイトやサービスの紹介</p>
+        {/*
         {data.allContentfulDeliverable.edges.map(edge =>
           <DeriverableLink key={edge.node.slug} work={edge.node} />
         )}*/}
       </div>
-      <div>Hello blogs</div>
       <div className="contents-wrapper">
+        <h2>ジサクブログ</h2>
+        <hr />
+        <p>技術書やリファレンスについての雑文</p>
         {data.allContentfulPost.edges.map(edge =>
           <Postlink key={edge.node.slug} post={edge.node} />
         )}
       </div>
       <div className="contents-wrapper">
+        <h2>オトイアワセ</h2>
+        <hr />
+        <p>お気軽にお問い合わせください</p>
         <ContactForm></ContactForm>
       </div>
     </Layout>

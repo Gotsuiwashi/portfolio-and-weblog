@@ -1,21 +1,18 @@
 // src/components/hero.js
 import React from "react"
+import { Helmet } from "react-helmet"
 import "../styles/components/hero.scss"
 
 export default function Hero() {
     return (
         <div className="hero">
+            <Helmet>
+                <script src="https://kit.fontawesome.com/0c4dfe9ecb.js" crossorigin="anonymous"></script>
+            </Helmet>
             <h1 className="hero-text">
-                Welcome to my portfolio!<br />
-                Enjoy lots of posts.<br />
+                ゴツイワシノ<br />
+                ウェブサイト
             </h1>
-            <div className="hero-author">
-                <img src="../images/gatsby-icon.png" className="hero-author-image" alt="avatar"></img>
-                <p className="hero-author-text">
-                    Written by XXXX.<br />
-                    Front Engineer at Hoge.Inc.
-                </p>
-            </div>
-        </div>
+        </div >
     )
 }
