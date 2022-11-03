@@ -1,7 +1,8 @@
 .wrapper {
-  padding: 7rem 0 10rem;
+  padding: 20px 0 20px;
 
   .container {
+
     input[type='text'],
     input[type='email'],
     textarea {
@@ -16,13 +17,14 @@
     }
 
     label {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
 
     button {
       width: 100%;
       border: none;
-      color: white;
+      background: #000;
+      color: #fff;
       padding: 0.5rem 2rem;
       font-size: 1.6rem;
       transition-duration: 0.4s;
@@ -34,8 +36,5 @@
       }
     }
 
-    *:focus {
-      outline: none;
-    }
   }
 }

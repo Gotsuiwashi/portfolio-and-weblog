@@ -2,13 +2,6 @@
 .post-link-anchor {
   color: inherit;
   text-decoration: none;
-
-  :hover {
-    box-shadow: 0 0 0 #ffffff,
-      0 0 0 #d9d9d9,
-      inset -12px -12px 36px 0 #ffffff,
-      inset 12px 12px 36px 0 #d0d0d0;
-  }
 }
 
 .post-link {
@@ -20,10 +13,13 @@
   text-align: left;
   box-shadow: -12px -12px 12px 0 #ffffff,
     12px 12px 12px 0 #d9d9d9;
-  transition: box-shadow .4s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
 
-  :hover {
-    box-shadow: initial;
+  &:hover {
+    box-shadow: 0 0 0 #ffffff,
+      0 0 0 #d9d9d9,
+      inset -12px -12px 36px 0 #ffffff,
+      inset 12px 12px 36px 0 #d0d0d0;
   }
 
   h2 {
@@ -46,15 +42,6 @@
 
 .post-link-date {
   color: #595959;
-}
-
-
-@media screen and (max-width: 639px) {
-  .post-link {
-    grid-template-columns: 1fr;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
 }
 
 /*@media screen and (min-width: 576px) {

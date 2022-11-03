@@ -1,17 +1,17 @@
 .logo-image {
-  width: 120px;
+  height: 76px;
+  margin: 10px auto 0;
 }
 
 header {
   display: grid;
   grid-template-areas:
     'logo social'
-    'nav nav';
+    'logo nav';
   grid-template-columns: 1fr 1fr;
 
   .main-logo {
     grid-area: logo;
-    text-align: left;
   }
 
   .social {
@@ -34,4 +34,25 @@ header {
       margin: 5px;
     }
   }
+}
+
+@media screen and (max-width: 639px) {
+  header {
+    text-align: center;
+    grid-template-areas:
+      'logo'
+      'nav'
+      'social';
+    grid-template-columns: initial;
+
+    .social {
+      justify-content: space-evenly;
+      margin: 0;
+      margin-top: -10px;
+      padding: 0;
+    }
+
+  }
+
+
 }

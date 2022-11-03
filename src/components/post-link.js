@@ -5,7 +5,6 @@ import "../styles/components/post-link.scss";
 
 export default function PostLink({ post }) {
     const { title, updatedAt, image } = post;
-    const description = post.description.description;
     const pageLink = `/blog/${post.slug}/`
 
     return (
@@ -16,7 +15,7 @@ export default function PostLink({ post }) {
                 </div>
                 <div className="post-link-text">
                     <h2>{title}</h2>
-                    <p className="post-link-body">{description}</p>
+                    <p className="post-link-body">tagいっぱい</p>
                     <p className="post-link-date">{updatedAt}</p>
                 </div>
             </div>

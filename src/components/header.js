@@ -2,7 +2,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import Nav from "../components/navigation"
-import LOGO_IMG from "../images/gatsby-icon.png"
+import LOGO_IMG from "../images/logo-gotsuiwashi.svg"
 import "../styles/components/header.scss"
 import Social from "./social"
 

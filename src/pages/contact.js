@@ -6,8 +6,10 @@ import Seo from "../components/seo"
 export default function About() {
     return (
         <Layout>
+
             <Seo title="Career Detail" description="経歴紹介ページ" />
-            <ContactForm></ContactForm>
+            <div className="messages-wrapper">
+                <ContactForm></ContactForm></div>
         </Layout>
     )
 }
