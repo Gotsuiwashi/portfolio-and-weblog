@@ -12,13 +12,17 @@ export default function Works({ pageContext }) {
     return (
         <Layout>
             <Seo title={title} description={description} />
-            <img src={image.file.url} className="post-image" alt="post-cover"></img>
+            <div className="deliverable-wrapper">
 
-            <div className="post-header">
-                <h1>{title}:企業名と製品名</h1>
-                <p className="post-date">{description}</p>
+                <img src={image.file.url} className="post-image" alt="post-cover"></img>
+
+                <div className="post-header">
+                    <h1>{title}:企業名と製品名</h1>
+                    <p className="post-date">{description}</p>
+                </div>
+                <div dangerouslySetInnerHTML={{ __html: body }} className="post-body" />
+
             </div>
-            <div dangerouslySetInnerHTML={{ __html: body }} className="post-body" />
         </Layout>
     )
 }

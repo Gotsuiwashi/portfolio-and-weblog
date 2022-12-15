@@ -25,7 +25,15 @@ module.exports = {
         footnotes: true,
         pedantic: true,
         gfm: true,
-        plugins: [],
+        plugins: [
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            },
+          },
+        ],
       },
     }
   ],

@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 import React from "react"
 import ContactForm from "../components/contact-form"
-import DeriverableLink from "../components/deriverable"
+import DeliverableRedirection from "../components/deliv-link"
 import Hero from "../components/hero"
 import Layout from "../components/layout"
 import Postlink from "../components/post-link"
@@ -25,7 +25,7 @@ export default function Home({ data }) {
         <p>制作に携わったウェブサイトやサービスの紹介</p>
 
         {data.allContentfulDeliverable.edges.map(edge =>
-          <DeriverableLink key={edge.node.slug} work={edge.node} />
+          <DeliverableRedirection key={edge.node.slug} work={edge.node} />
         )}
       </div>
       <div className="contents-wrapper">
@@ -63,6 +63,10 @@ export const query = graphql`
             }
             slug
             updatedAt(locale: "ja-JP", formatString: "YYYY年MM月DD日")
+            tags {
+              title
+              slug
+            }
           }
         }
       }
@@ -78,7 +82,10 @@ export const query = graphql`
             }
             technique
             updatedAt(locale: "ja-JP", formatString: "YYYY年MM月DD日")
-            slug
+            description{
+              description
+            }
+            url
           }
         }
       }

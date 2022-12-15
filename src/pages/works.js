@@ -1,6 +1,6 @@
 import { graphql } from "gatsby"
 import React from "react"
-import DeriverableLink from "../components/deriverable"
+import DeliverableLink from "../components/deliverable"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -8,10 +8,14 @@ export default function Works({ data }) {
   return (
     <Layout>
       <Seo title="works" description="Gatsbyを使って作ったworks" />
-      <div>Hello blogs</div>
-      {data.allContentfulDeliverable.edges.map(edge =>
-        <DeriverableLink key={edge.node.slug} work={edge.node} />
-      )}
+      <div className="deliverables-wrapper">
+        <h1>ツクッタモノ</h1>
+        <hr />
+        <p>制作に携わったウェブサイトやサービスの紹介</p>
+        {data.allContentfulDeliverable.edges.map(edge =>
+          <DeliverableLink key={edge.node.slug} work={edge.node} />
+        )}
+      </div>
     </Layout>
   )
 }
@@ -29,7 +33,10 @@ export const query = graphql`
             }
             technique
             updatedAt(locale: "ja-JP", formatString: "YYYY年MM月DD日")
-            slug
+            description{
+              description
+            }
+            url
           }
         }
       }

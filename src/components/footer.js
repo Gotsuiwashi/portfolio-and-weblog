@@ -2,12 +2,10 @@
 import React from "react"
 import Nav from "../components/navigation"
 import "../styles/components/footer.scss"
-import Social from "./social"
 
 export default function Footer() {
     return (
         <footer>
-            <Social></Social>
             <Nav></Nav>
             <p className="copyright"><small>&#169; Gotsuiwashi All rights reserved.</small></p>
         </footer>

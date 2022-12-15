@@ -1,0 +1,26 @@
+{
+  "name": "GatsbyBlogtJS",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "nextrootjs",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+	"settings": {
+	  "editor.formatOnSave": true,
+	  "editor.formatOnPaste": true,
+	  "editor.formatOnType": true,
+	  "editor.stickyScroll.enabled": true,
+	  "editor.codeActionsOnSave": {
+		"source.organizeImports": true,
+		"source.fixAll.eslint": true
+	  },
+	  "[json]": {
+		"editor.formatOnSave": false
+	  }
+	},
+	"forwardPorts": [8000],
+	"features": {
+		"git":{
+			"version": "latest"
+		}
+	}	
+}

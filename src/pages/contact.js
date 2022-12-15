@@ -6,9 +6,12 @@ import Seo from "../components/seo"
 export default function About() {
     return (
         <Layout>
-
             <Seo title="Career Detail" description="経歴紹介ページ" />
             <div className="messages-wrapper">
+
+                <h1>オトイアワセ</h1>
+                <hr />
+                <p>お気軽にお問い合わせください</p>
                 <ContactForm></ContactForm></div>
         </Layout>
     )
