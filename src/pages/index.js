@@ -11,7 +11,7 @@ import "../styles/pages/index.scss"
 export default function Home({ data }) {
   return (
     <Layout>
-      <Seo title="Dev Blog" description="Gatsbyブログ" />
+      <Seo title="Gotsuiwashi Blog" description="Gatsbyで作ったGotsuiwashiのブログ" />
       <Hero></Hero>
       <div className="messages-wrapper">
         <h2>ドンナサイト？</h2>

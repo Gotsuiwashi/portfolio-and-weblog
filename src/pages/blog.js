@@ -8,7 +8,7 @@ export default function Blog({ data }) {
   return (
     <Layout>
 
-      <Seo title="Main Blog" description="Gatsbyを使って作ったMainブログです" />
+      <Seo title="Gatsby Blog" description="Gatsbyで作ったブログです" />
       <div className="posts-wrapper">
 
         <h1>ジサクブログ</h1>

@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 export default function Works({ data }) {
   return (
     <Layout>
-      <Seo title="works" description="Gatsbyを使って作ったworks" />
+      <Seo title="works" description="今までの制作物" />
       <div className="deliverables-wrapper">
         <h1>ツクッタモノ</h1>
         <hr />
