@@ -2,15 +2,13 @@
   li {
     display: inline-block;
     position: relative;
-    color: #434343;
-    text-shadow: -2px -2px 4px #d0d0d0,
-      2px 2px 6px #606060;
-
+    text-shadow: 2px 2px 6px #ffffff,
   }
 
   a {
     text-decoration: none;
     transition-duration: 3s;
+    color: #434343;
 
     &::after {
       content: "";
