@@ -8,9 +8,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     allContentfulPost {
       edges {
         node {
+          updatedAt(locale: "ja-JP", formatString: "YYYY年MM月DD日")
           slug
           title
-          updatedAt(locale: "ja-JP", formatString: "YYYY年MM月DD日")
           image {
             file {
               url

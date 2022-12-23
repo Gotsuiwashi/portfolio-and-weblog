@@ -48,9 +48,10 @@ export default function Home({ data }) {
 
 export const query = graphql`
     query  {
-      allContentfulPost {
-        edges {
-          node {
+      allContentfulPost (sort: {order: DESC, fields: updatedAt}){
+        edges{
+          node{
+            updatedAt(locale: "ja-JP", formatString: "YYYY年MM月DD日")
             title
             image {
               title
@@ -62,7 +63,6 @@ export const query = graphql`
               description
             }
             slug
-            updatedAt(locale: "ja-JP", formatString: "YYYY年MM月DD日")
             tags {
               title
               slug
