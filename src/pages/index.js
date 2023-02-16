@@ -16,7 +16,7 @@ export default function Home({ data }) {
       <div className="messages-wrapper">
         <h2>ドンナサイト？</h2>
         <hr />
-        <p>エンジニア(?)兼デザイナー(?)の<br></br>Gotsuiwashi(屋号)が制作した<br />ポートフォリオサイト。ブログ等のコンテンツも製作中。
+        <p> Gotsuiwashiのポートフォリオサイト。ブログ等のコンテンツも製作中。
         </p>
       </div>
       <div className="contents-wrapper">
